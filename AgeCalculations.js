@@ -1,0 +1,10 @@
+var  floatYears, floatMonths, floatDays, floatWeeks, floatFortnights;
+     floatYears = parseFloat(prompt("Enter age in years"));
+     floatMonths = floatYears*12;
+     floatDays = floatYears*365.25;
+     floatWeeks = floatYears*52;
+     floatFortnights = floatDays/14;
+     alert("Age in Months = " + floatMonths);
+     alert("Age in Days = " + floatDays);
+     alert("Age in Weeks = " + floatWeeks);
+     alert("Age in Fortnights = " + floatFortnights);
