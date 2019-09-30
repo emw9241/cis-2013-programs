@@ -15,16 +15,16 @@ var $ = function (id)
 */
  var calculate = function()
  {
-   var floatMonthlyPayment, intLoanTerm, floatTotalCost;
-   floatMonthlyPayment = $("monthly_payment").value;
-   intLoanTerm =$("loan_length").value;
-   floatTotalCost = parseFloat(floatMonthlyPayment * intLoanTerm);
-   $("total_cost").value = floatTotalCost;   
-   
- }
-   
+  var floatMonthlyPayment, intLoanTerm, floatTotalCost;
+    floatMonthlyPayment = parseFloat($("monthly_payment").value_;
+    intLoanTerm = parseInt($("loan_length").value);
+    floatTotalCost = parseFloat(floatMonthlyPayment * intLoanTerm);
+    $("total_cost").value = floatTotalCost;
     
  }
+    
+    
+ 
  
  window.onload = function () 
 {
