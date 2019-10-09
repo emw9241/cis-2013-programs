@@ -20,25 +20,32 @@ intGradeOption = parseFloat(prompt("Is the course audit pass/fail (1) or Letter 
 
 if (intGradeOption===1)
 {
-    if(floatTotalPts >= 80) {
+    if(floatTotalPts >= 80)
+    {
         stringFinalGrade = "Pass";
+        }
         else
+        {
         stringFinalGrade = "Fail";
     }
+}
     else
-    if (floatTotalPts >=90){
+    {
+    if (floatTotalPts >=90)
+    {
         stringFinalGrade = "A";
+    }
         else
-        if (floatTotalPts >= 80 && <= 90){
+        {
+        if(floatTotalPts >= 80 && floatTotalPts <= 90)
+        {
             stringFinalGrade = "B";
+            }
             else
-            if (floatTotalPts >= 70 && <=80){
-                stringFinalGrade = "C";
-                else
-                stringFinalGrade = "F";
+            {
+            stringFinalGrade = "F";
             }
         }
     }
-}
-
-alert("Your final grade is: " +stringFinalGrade);
+    
+alert("Your final grade is: " + stringFinalGrade);
