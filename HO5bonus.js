@@ -16,7 +16,7 @@ floatFinPts = parseFloat(prompt("Please enter final Exam points (0-35):"));
 
 floatTotalPts = parseFloat(floatHwPts + floatMidPts + floatFinPts);
 
-intGradeOption = parseFloat(prompt("Is the course audit pass/fail (1) or Letter grade (2)"));
+/*intGradeOption = parseFloat(prompt("Is the course audit pass/fail (1) or Letter grade (2)"));
 
 if (intGradeOption===1)
 {
@@ -28,12 +28,10 @@ if (intGradeOption===1)
         {
         stringFinalGrade = "Fail";
     }
-}
-    else
+}*/
+    switch (intGradeOption ===  2)
     {
-    switch(intGradeOption === 2)
-    {
-        case floatTotalPts >= 90:
+        case (floatTotalPts >= 90):
             stringFinalGrade = "A";
             break;
         case floatTotalPts >= 80 && floatTotalPts <90:
@@ -48,8 +46,8 @@ if (intGradeOption===1)
         case floatTotalPts <60:
             stringFinalGrade = "F";
             break;
-    };  
-  }  
+   /* }    
+    } */
  }   
 alert("Your final grade is: " + stringFinalGrade);
-}
+//}
