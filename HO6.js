@@ -68,7 +68,7 @@ var fixPrinter = function() {
     }
     else if(boolRecognised === true)
         {
-            stringOutput = stringMessage3 + stringMessage4;
+            stringOutput = stringMessage3 + "\n" + stringMessage4;
         }
        
 $("output").value = stringOutput;
