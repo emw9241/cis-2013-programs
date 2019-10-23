@@ -28,28 +28,28 @@ var fixPrinter = function()
     
     switch (true)
     {
-        case boolRedLight === true && boolRedLight === true && boolRecognized === true:
+        case boolPrinting === true && boolRedLight === true && boolRecognized === true:
             stringOutput = stringMessage2 + "\n" + stringMessage3 + "\n" + stringMessage4;
             break;
-        case boolPrinting === true && boolLight === true && boolRecognized === false:
+        case boolPrinting === true && boolRedLight === true && boolRecognized === false:
             stringOutput = stringMessage4 + "\n" + stringMessage5;
             break;
-        case boolRedLight === true && boolRedLight === false && boolRecongized === true:
+        case boolPrinting === true && boolRedLight === false && boolRecognized === true:
             stringOutput = stringMessage1 + "\n" + stringMessage2 + "\n" + stringMessage3;
             break;
-        case boolRedLight === true && boolRedLight === false && boolRecognized === false:
+        case boolPrinting === true && boolRedLight === false && boolRecognized === false:
             stringOutput = stringMessage5;
             break;
-        case boolRedLight === false && boolRedLight === true && boolRecognized === true:
+        case boolPrinting === false && boolRedLight === true && boolRecognized === true:
             stringOutput = stringMessage3 + "/n" + stringMessage4;
             break;
-        case boolRedLight === false && boolRedLight === true && boolRecognized === false:
+        case boolRedLight === true && boolRecognized === false && boolPrinting === false:
             stringOutput = stringMessage4;
             break;
-        case boolRedLight === false && boolRedLight === false && boolRecognized === true:
+        case boolPrinting === false && boolRedLight === false && boolRecognized === true:
             stringOutput = stringMessage3;
             break;
-        case boolRedLight === false && boolRedLight === false && boolRecognized === false:
+        case boolPrinting === false && boolRedLight === false && boolRecognized === false:
             stringOutput = stringMessage6;
             break;
         }
