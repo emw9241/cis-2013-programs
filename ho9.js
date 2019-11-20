@@ -2,7 +2,7 @@
 var $ = function (id) 
 {
     return document.getElementById(id);
-}
+};
 
 // Main program function that accepts user input for the total number of the
 //Fibonacci series to show and the then runs a loop to create the output
